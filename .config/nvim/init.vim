@@ -1,7 +1,7 @@
 call plug#begin()
 
-Plug 'haystackandroid/snow'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'tpope/vim-sensible'
 
 call plug#end()
 
@@ -13,8 +13,7 @@ set ai
 set number
 set hlsearch
 set ruler
-
-set background=light
-colorscheme snow
-
 highlight Comment ctermfg=green
+
+let &t_SI = "\e[6 q"
+let &t_EI = "\e[2 q"
